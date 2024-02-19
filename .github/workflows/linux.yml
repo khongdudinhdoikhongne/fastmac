@@ -17,3 +17,5 @@ jobs:
     - run: source script-linux.sh
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@master
+      env:
+        TEST_ME: ${{ secrets.TEST_ME }}
